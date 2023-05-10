@@ -1,0 +1,125 @@
+
+
+.navbar{
+    height: 50px;
+    background-color:  rgb(61, 67, 77)!important;
+}
+
+.logo{
+    height: 70px;
+}
+.carousel-inner{
+    height: 449px;
+    background-size: auto;
+}
+.carousel-item{
+    position: initial !important;
+}
+.carousel-caption{
+    bottom: 8rem !important;
+    right: 50px !important;
+    left: 47% !important;
+}
+.h2, .tit, .btns {
+    align-items: end !important;
+    text-align: right;
+    margin-right: 0px;
+    text-align: right;
+}
+.comprar{
+color: chartreuse !important;
+text-decoration: none;
+}
+.btnquiero{
+background:transparent !important;
+color: white !important;
+}
+
+.cardscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divcards{
+    display:flex;
+    gap: 34px;
+
+}
+.lugares{
+    display: flex;
+    width: 100%;
+}
+.honolulu{
+    display: block;
+    height: 450px;
+    width: 50%;
+    background-size: cover;
+    background-image: url("../imagenes_integrador_front/honolulu.jpg");
+}
+.descr{
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.desc{
+    background-color: rgb(61, 67, 77);
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 50%;
+}
+.btnhon{
+    border: solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.form{
+    display:flex ;
+    flex-direction: column;
+    align-items:center ;
+}
+
+#enviar{
+    background-color: rgb(129, 190, 37);
+    border-color: greenyellow;
+    border-radius: 8px;
+    color: white;
+    padding: 3px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.pie{
+    margin-top: 50px !important;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: lighter;
+}
+.form{
+    color: rgba(12, 11, 11, 0.767);
+    width: 600px;
+    margin-left: 450px;
+    font-weight: lighter;
+}
+.formtext{
+    height: 134px;
+    margin-top: 25px;
+    margin-left: 1px;
+}
+footer, .foot{
+    height: 100px;
+    background-color: rgb(26, 53, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center!important;   
+}
+.fot{
+    display: flex !important;
+    justify-content: space-around;
+    column-gap: 50px;
+}
+.separadas{
+    width: 89px;
+}
