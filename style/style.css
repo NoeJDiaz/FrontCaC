@@ -14,6 +14,7 @@
 }
 .carousel-item{
     position: initial !important;
+    width: 100vw !important;
 }
 .carousel-caption{
     bottom: 8rem !important;
@@ -43,6 +44,7 @@ color: white !important;
 .divcards{
     display:flex;
     gap: 34px;
+    flex-wrap: wrap;
 
 }
 .lugares{
@@ -78,7 +80,7 @@ color: white !important;
     align-items:center ;
 }
 
-#enviar{
+#enviar, #borrar, #resumen{
     background-color: rgb(129, 190, 37);
     border-color: greenyellow;
     border-radius: 8px;
@@ -86,6 +88,15 @@ color: white !important;
     padding: 3px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+#borrar:hover{
+    background-color: rgb(134, 65, 25);
+    box-shadow: 1px 1px 2px rgb(129, 190, 37);
+}
+ #resumen:hover{
+    background-color: rgb(91, 134, 25);
+    box-shadow: 1px 1px 2px rgb(129, 190, 37);
+   
 }
 .pie{
     margin-top: 50px !important;
@@ -102,6 +113,15 @@ color: white !important;
     width: 600px;
     margin-left: 450px;
     font-weight: lighter;
+    margin: 0 auto;
+}
+
+#idform{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .formtext{
     height: 134px;
@@ -122,4 +142,117 @@ footer, .foot{
 }
 .separadas{
     width: 89px;
+}
+.categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 62px;
+    column-gap: 8px;
+}
+.est, .trai, .jun{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.est{
+  
+    border: 2px solid cornflowerblue;
+    
+    
+}
+.trai{
+  
+    border: 2px solid rgb(47, 117, 119);
+   
+}
+.jun{
+  
+    border: 2px solid rgb(237, 205, 100);
+  
+}
+div> h4{
+font-size: medium;
+padding: 5px;
+text-align: center;
+justify-content: center;
+}
+div> h3{
+    font-size: 22px;
+    font-size: bold;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+#categoria,input{
+    background-color: none !important;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid rgb(162, 223, 208);
+
+}
+#total{
+    border: 2px solid rgb(122, 176, 238);
+    background-color: rgba(166, 216, 245, 0.904);
+}
+
+#resumen, #borrar{
+    width: 280px;
+    padding: 5px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control{
+    padding: 15px;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+  visibility: hidden;
+}
+.form-control.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible !important;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: #e21e08;
+    visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+   
+   }
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;;
+}
+input[type=submit]{
+    width: 40%;
+    background-color: rgba(145, 67, 47, 0.288);
+    padding: 15px 10px;
+    margin: 0px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover{
+    background-color: rgba(161, 124, 115, 0.288);
+    transition: 0,5s;
+    transform: translate(-3px) scale(1.10);
 }

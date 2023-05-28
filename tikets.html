@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+    <link rel="icon" type="image/ico" href="./imagenes_integrador_front/codoacodo.ico" sizes="16x16">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid">
+  
+          <a title="codo a codo" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" ><img class="logo" src="./imagenes_integrador_front/codoacodo.png" alt="logo"></img>
+          <div class="nav-item">
+            <a class="navbar-brand" aria-current="page" href="./index.html">Conf Bs As</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon " style="background-color: crimson; border-radius: 9px;"></span>
+          </button>
+  
+          <div class=" naav collapse navbar-collapse gap-2 d-md-flex justify-content-md-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-md-end ">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#LaConferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#LosOradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#LugarYfecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#ConvierteteEnOrador">Conviertete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class=" comprar btn  " aria-current="page" href="tikets.html">Comprar tikets</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+
+<section class="categorias">
+    <div class="est">
+        <h3>Estudiante</h3>
+        <h4>Tienen un descuento</h4>
+        <h3>80%</h3>
+        <h4 style="color: rgb(105, 104, 104);" >*presentar documentación</h4>
+
+    </div>
+    <div class="trai">
+        <h3>Trainee</h3>
+        <h4>Tienen un descuento</h4>
+        <h3>50%</h3>
+        <h4 style="color: rgb(105, 104, 104);">*presentar documentación</h4>
+
+    </div>
+    <div class="jun">
+        <h3>Junior</h3>
+        <h4>Tienen un descuento</h4>
+        <h3>15%</h3>
+        <h4 style="color: rgb(105, 104, 104);" >*presentar documentación</h4>
+
+    </div>
+</section>
+<div><h4>VENTA</h4></div>
+
+
+<form class="form" id="idform" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <fieldset>
+  <legend style="font-size: 30px; font-weight: bold;">VALOR DEL TIKET $200 </legend>
+</fieldset>
+  <div style="display: flex;">
+  <div class="form-control">
+    <input id = "username" type="text" placeholder="Nombre"> 
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <small id="username_small">Error message</small>
+</div>
+<div class="form-control">
+  <input id = "lastname" type="text" placeholder="Apellido"> 
+  <i class="fa-solid fa-circle-check"></i>
+  <i class="fa-solid fa-circle-exclamation"></i>
+  <small id="username_small">Error message</small>
+</div>
+</div>
+  <div class="form-control">
+      <input id= "email" type="text" placeholder="Correo"> 
+      <i class="fa-solid fa-circle-check"></i>
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <small id="email_small">Error message</small>
+    </div>
+      <div style="display: flex;">
+  
+      <div class="form-control">
+      <label >Cantidad </label> 
+      <input id="cantidad" type="number" min="1"  placeholder="cantidad"> 
+      <i class="fa-solid fa-circle-check"></i>
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <small id ="password_small">Error message </small>
+
+  </div>
+  <div class="form-control">
+    <label for="categoria">Categoria </label> 
+      <select id="categoria" placeholder="cantidad">
+        <option value="0.8">Estudiante</option>
+        <option value="0.5">Trainee</option>
+        <option value="0.15">Junior</option>
+      </select>
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <small id ="password_small">Error message </small>
+
+</div>
+</div>
+<div class="form-control">
+  <input id="total" type="number"  placeholder="Total a Pagar: $"> 
+  <i class="fa-solid fa-circle-check"></i>
+  <i class="fa-solid fa-circle-exclamation"></i>
+  <small id ="password_small">Error message </small>
+
+</div>
+<div class="btn.tiket" style="display: flex; column-gap: 5px; align-items: center;justify-content: center;">
+  <input type="reset" value="Borrar" id="borrar">
+  <input type="submit" value="Resumen" id="resumen">
+</div>
+</form>
+
+      <footer class="foot">
+        
+        <div class=" foot naav collapse navbar-collapse gap-2 d-inline-flex text-white" id="navbarSupportedContent">
+            <ul class="fot navbar-nav  mb-2 mb-lg-0 d-flex flex-row">
+
+              <li class="nav-item">
+                <a class=" separadas nav-link active" aria-current="page" href="..">Preguntas frecuntes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..">Prensa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class=" separadas nav-link  " aria-current="page" href="..">Terminos y condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..">Estudiantes</a>
+              </li>
+            </ul>
+  
+          </div>
+    </footer>
+    <script src="./js/tikets.js"></script>
+</body>
+</html>
